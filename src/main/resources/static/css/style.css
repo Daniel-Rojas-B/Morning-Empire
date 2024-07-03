@@ -33,8 +33,29 @@ body {
 h1,
 h2 {
   font-family: 'Dancing Script', cursive;
+  text-align: center;
 }
-
+h6 {
+	color:white;
+}
+.conditional {
+	color:white;
+}
+.submitButton {
+	background-color: black;
+	color: white;
+}
+.logout {
+	color: white;
+	text-decoration: underline;
+	font-size: 12px;
+}
+input {
+            
+            width: 100%;
+            margin:5px 0px 5px 0px;
+        }
+        
 .heading_container {
   display: -webkit-box;
   display: -ms-flexbox;
