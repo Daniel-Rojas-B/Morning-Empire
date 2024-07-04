@@ -1,9 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
-<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
+	<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ page isErrorPage="true"%>
-
 <!DOCTYPE html>
 <html>
 
@@ -20,7 +19,7 @@
 <meta name="author" content="" />
 <link rel="shortcut icon" href="images/favicon.png" type="">
 
-<title>Morning Empire</title>
+<title>Feane</title>
 
 <!-- bootstrap core css -->
 <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
@@ -43,7 +42,6 @@
 
 </head>
 
-<body>
 <body class="sub_page">
 
 	<div class="hero_area">
@@ -54,7 +52,7 @@
 		<header class="header_section">
 			<div class="container">
 				<nav class="navbar navbar-expand-lg custom_nav-container ">
-					<a class="navbar-brand" href="index.html"> <span> Morning Empire
+					<a class="navbar-brand" href="index.html"> <span> Feane
 					</span>
 					</a>
 
@@ -67,18 +65,19 @@
 
 					<div class="collapse navbar-collapse" id="navbarSupportedContent">
 						<ul class="navbar-nav  mx-auto ">
-							<li class="nav-item"><a class="nav-link" href="/">Home
+							<li class="nav-item "><a class="nav-link" href="/">Home
 							</a></li>
 							<li class="nav-item"><a class="nav-link" href="/menu">Menu</a>
 							</li>
-							<li class="nav-item"><a class="nav-link" href="/about">About</a>
-							</li>
-							
+							<li class="nav-item active"><a class="nav-link"
+								href="/about">About <span class="sr-only">(current)</span>
+							</a></li>
+
 							<c:if test="${not empty userName}">
 								<li class="nav-item"><a class="nav-link" href="/logout">Hi,${userName}</a><a
-								class="nav-link logout" href="/logout">log out</a></li>
-							</c:if>	
-							
+									class="nav-link logout" href="/logout">log out</a></li>
+							</c:if>
+
 						</ul>
 						<div class="user_option">
 							<a href="" class="user_link"> <i class="fa fa-user"
@@ -158,74 +157,36 @@
 		<!-- end header section -->
 	</div>
 
-	<!-- book section -->
-	<section class="book_section layout_padding">
-		<div class="container">
-			
+	<!-- about section -->
+
+	<section class="about_section layout_padding">
+		<div class="container  ">
+
 			<div class="row">
-				<div class="col-md-6">
-					<div class="form_container">
-						<form:form id="register-form" action="/register" method="POST"
-							modelAttribute="newUser">
-							<h2>Register</h2>
-							
-							<form:label path="firstName">First Name:</form:label>
-							<form:input type="text" id="register-username" path="firstName" />
-							
-							<form:errors path="firstName" class="text-danger" />
-							<br />
-							<form:label path="lastName">Last Name:</form:label>
-							<form:input type="text" id="register-username" path="lastName" />
-							
-							<form:errors path="lastName" class="text-danger" />
-							<br />
-							<form:label path="email">Email:</form:label>
-							<form:input type="email" id="register-email" path="email" />							
-							<form:errors path="email" class="text-danger" />
-							<br />
-							<form:label path="password">Password:</form:label>
-							<form:input type="password" id="register-password" path="password" />
-							
-							<form:errors path="password" class="text-danger" />
-							<br />
-							<form:label path="confirm">Confirm Password:</form:label>
-							<form:input type="password" id="register-confirm-password"
-								path="confirm" />
-							
-							<form:errors path="confirm" class="text-danger" />
-							<br />
-							<div class="align-right">
-								<input class="submitButton" type="submit" value="Register" />
-							</div>
-						</form:form>
+				<div class="col-md-6 ">
+					<div class="img-box">
+						<img src="images/about-img.png" alt="">
 					</div>
 				</div>
-				
 				<div class="col-md-6">
-					<div class="form_container">
-						<form:form id="login-form" action="/RegistrationandLogin" method="POST"
-						modelAttribute="newLogin">
-						<h2>Log In</h2>
-						<form:label path="email">Email:</form:label>
-						<form:input type="email" id="login-email" path="email" />
-						<form:errors path="email" class="text-danger" />
-						<br />
-						<form:label path="password">Password:</form:label>
-						<form:input type="password" id="login-password" path="password" />
-						<form:errors path="password" class="text-danger" />
-						<div class="align-right">
-							<input class="submitButton" type="submit" value="Log In" />
+					<div class="detail-box">
+						<div class="heading_container">
+							<h2>We Are Feane</h2>
 						</div>
-					</form:form>
-					
+						<p>There are many variations of passages of Lorem Ipsum
+							available, but the majority have suffered alteration in some
+							form, by injected humour, or randomised words which don't look
+							even slightly believable. If you are going to use a passage of
+							Lorem Ipsum, you need to be sure there isn't anything
+							embarrassing hidden in the middle of text. All</p>
+						<a href=""> Read More </a>
 					</div>
 				</div>
-				
-				
 			</div>
 		</div>
 	</section>
-	<!-- end book section -->
+
+	<!-- end about section -->
 
 	<!-- footer section -->
 	<footer class="footer_section">
@@ -247,7 +208,7 @@
 				</div>
 				<div class="col-md-4 footer-col">
 					<div class="footer_detail">
-						<a href="" class="footer-logo"> Morning Empire </a>
+						<a href="" class="footer-logo"> Feane </a>
 						<p>Necessary, making this the first true generator on the
 							Internet. It uses a dictionary of over 200 Latin words, combined
 							with</p>

@@ -69,17 +69,111 @@ public class HomeController {
 		return "home.jsp";
 	}
 	
-	@GetMapping("/RegistrationandLogin")
-	public String login(Model model) { 
+	@GetMapping("/RegistrationandLogin") 
+	public String login(Model model, HttpSession session) { 
+
+				// Bind empty User and LoginUser objects to the JSP
+				// to capture the form input		
+			
+//				Long userId = (Long) session.getAttribute("userId");
+//				System.out.println("User in session: " + userId);
+//				if (userId == null) {
+//					// Redirect to login if user is not logged in
+//					return "redirect:/RegistrationandLogin";
+//				}
+//				// Retrieve the user from the database
+//				User user = userService.findUserById(userId);
+//				System.out.println("User in session: " + user);
+//				if (user == null) {
+//					// Redirect to login if user is not found
+//					return "redirect:/RegistrationandLogin";
+//				}
+
+				// Add the user's name to the model
+//				model.addAttribute("userName", user.getFirstName());
+				model.addAttribute("newUser", new User());
+				model.addAttribute("newLogin", new LoginUser());
+				return "RegistrationandLogin.jsp";
+	}
+	
+	@GetMapping("/menu")
+	public String menu(Model model, HttpSession session) { 
 
 		// Bind empty User and LoginUser objects to the JSP
-		// to capture the form input
+		// to capture the form input		
+	
+		Long userId = (Long) session.getAttribute("userId");
+		System.out.println("User in session: " + userId);
+		if (userId == null) {
+			// Redirect to login if user is not logged in
+			return "menu.jsp";
+		}
+		// Retrieve the user from the database
+		User user = userService.findUserById(userId);
+		System.out.println("User in session: " + user);
+		if (user == null) {
+			// Redirect to login if user is not found
+			return "menu.jsp";
+		}
+
+		// Add the user's name to the model
+		model.addAttribute("userName", user.getFirstName());
 		model.addAttribute("newUser", new User());
 		model.addAttribute("newLogin", new LoginUser());
-//		return "index.html";
-		return "RegistrationandLogin.jsp";
+		return "menu.jsp";
 	}
+	@GetMapping("/about")
+	public String about(Model model, HttpSession session) { 
 
+		// Bind empty User and LoginUser objects to the JSP
+				// to capture the form input		
+			
+				Long userId = (Long) session.getAttribute("userId");
+				System.out.println("User in session: " + userId);
+				if (userId == null) {
+					// Redirect to login if user is not logged in
+					return "about.jsp";
+				}
+				// Retrieve the user from the database
+				User user = userService.findUserById(userId);
+				System.out.println("User in session: " + user);
+				if (user == null) {
+					// Redirect to login if user is not found
+					return "about.jsp";
+				}
+
+				// Add the user's name to the model
+				model.addAttribute("userName", user.getFirstName());
+				model.addAttribute("newUser", new User());
+				model.addAttribute("newLogin", new LoginUser());
+				return "about.jsp";
+	}
+	@GetMapping("/cart")
+	public String cart(Model model, HttpSession session) { 
+
+		// Bind empty User and LoginUser objects to the JSP
+				// to capture the form input		
+			
+				Long userId = (Long) session.getAttribute("userId");
+				System.out.println("User in session: " + userId);
+				if (userId == null) {
+					// Redirect to login if user is not logged in
+					return "cart.jsp";
+				}
+				// Retrieve the user from the database
+				User user = userService.findUserById(userId);
+				System.out.println("User in session: " + user);
+				if (user == null) {
+					// Redirect to login if user is not found
+					return "cart.jsp";
+				}
+
+				// Add the user's name to the model
+				model.addAttribute("userName", user.getFirstName());
+				model.addAttribute("newUser", new User());
+				model.addAttribute("newLogin", new LoginUser());
+				return "cart.jsp";
+	}
 //	@GetMapping("/teams/new")
 //	public String addTeam(Model model, HttpSession session) {
 //		Long userId = (Long) session.getAttribute("userId");
@@ -165,7 +259,7 @@ public class HomeController {
 			// Be sure to send in the empty LoginUser before
 			// re-rendering the page.
 			model.addAttribute("newLogin", new LoginUser());
-			return "login.jsp";
+			return "RegistrationandLogin.jsp";
 		}
 
 		// No errors!
@@ -176,7 +270,7 @@ public class HomeController {
 		return "redirect:/";
 	}
 //
-	@PostMapping("/login")
+	@PostMapping("/RegistrationandLogin")
 	public String login(@Valid @ModelAttribute("newLogin") LoginUser newLogin, BindingResult result, Model model,
 			HttpSession session) {
 
