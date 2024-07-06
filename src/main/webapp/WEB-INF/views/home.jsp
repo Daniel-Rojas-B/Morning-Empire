@@ -426,9 +426,8 @@
 									<img src="images/f1.png" alt="">
 								</div>
 								<div class="detail-box">
-									<h5>Delicious Pizza</h5>
-									<p>Veniam debitis quaerat officiis quasi cupiditate quo,
-										quisquam velit, magnam voluptatem repellendus sed eaque</p>
+									<h5>United Kingdom: Full English</h5> 
+									<p>Includes eggs, bacon, sausages, baked beans, grilled tomatoes, mushrooms, toast, and black pudding.</p>
 									<div class="options">
 										<h6>$20</h6>
 										<a href=""> <svg version="1.1" id="Capa_1"
@@ -504,9 +503,8 @@
 									<img src="images/f2.png" alt="">
 								</div>
 								<div class="detail-box">
-									<h5>Delicious Burger</h5>
-									<p>Veniam debitis quaerat officiis quasi cupiditate quo,
-										quisquam velit, magnam voluptatem repellendus sed eaque</p>
+									<h5>Japan: Traditional</h5>
+									<p>Consists of rice, miso soup, grilled fish, pickled vegetables, and a rolled omelette (tamagoyaki).</p>
 									<div class="options">
 										<h6>$15</h6>
 										<a href=""> <svg version="1.1" id="Capa_1"
