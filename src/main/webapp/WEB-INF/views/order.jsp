@@ -161,71 +161,28 @@
 	<section class="food_section layout_padding">
 		<div class="container">
 			<div class="heading_container heading_center">
-				<h2>Your Cart</h2>
+				<h2>Your Order</h2>
 			</div>
 			<div class="Cart">
-				
+
 				<body>
-					<div class="container mt-5">
-						
-						<table class="table table-bordered">
-							<thead class="thead-light">
-								<tr>
-									<th>Product</th>
-									<th>Quantity</th>
-									<th>Actions</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr class="cart-item">
-									<td>Product Name</td>
-									<td>
-										<div
-											class="quantity-buttons d-flex justify-content-center align-items-center">
-											<button class="btn btn-secondary"
-												onclick="updateQuantity(-1, this)">-</button>
-											<span class="mx-2">1</span>
-											<button class="btn btn-secondary"
-												onclick="updateQuantity(1, this)">+</button>
-										</div>
-									</td>
-									<td>
-										<button class="btn btn-primary" onclick="editOrder(this)">Edit</button>
-										<button class="btn btn-danger" onclick="deleteOrder(this)">Delete</button>
-									</td>
-								</tr>
-								<!-- Repeat this <tr> block for each product in the cart -->
-							</tbody>
-						</table>
-					</div>
+					<form:form action="/newProduct" method="POST" modelAttribute="newProduct">
 
-					<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-					<script
-						src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-					<script
-						src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-					<script>
-						function updateQuantity(change, button) {
-							const quantitySpan = button.parentElement
-									.querySelector('span');
-							let currentQuantity = parseInt(quantitySpan.textContent);
-							currentQuantity += change;
-							if (currentQuantity < 1) {
-								currentQuantity = 1;
-							}
-							quantitySpan.textContent = currentQuantity;
-						}
 
-						function editOrder(button) {
-							// Add your edit order logic here
-							alert('Edit order functionality not implemented yet.');
-						}
+						<form:label path="name">Product Name:</form:label>
+						<form:input type="text" path="name" value="${productName}"/>
+						<form:errors path="name" class="text-danger" />
 
-						function deleteOrder(button) {
-							const row = button.parentElement.parentElement;
-							row.parentElement.removeChild(row);
-						}
-					</script>
+						<form:label path="description">Special Instructions:</form:label>
+						<form:input type="text" path="description" required="true" />
+						<form:errors path="description" class="text-danger" />
+
+
+						<div class="align-right">
+							<input class="btn-success" type="submit" value="Add to Cart" />
+						</div>
+					</form:form>
+
 				</body>
 			</div>
 

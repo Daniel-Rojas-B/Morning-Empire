@@ -13,10 +13,14 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.SessionAttribute;
 
+
 import com.morningempire.models.LoginUser;
+import com.morningempire.models.Product;
 import com.morningempire.models.User;
+import com.morningempire.services.ProductService;
 import com.morningempire.services.UserService;
 
 //import com.codingdojo.exam.models.Team;
@@ -39,7 +43,8 @@ public class HomeController {
 	@Autowired
 	private UserService userService;
 
-	
+	@Autowired
+	private ProductService productService;
 	
 	
 	@GetMapping("/")
@@ -174,6 +179,32 @@ public class HomeController {
 				model.addAttribute("newLogin", new LoginUser());
 				return "cart.jsp";
 	}
+	@GetMapping("/product")
+	public String addProduct(Model model, HttpSession session) {
+		// Bind empty User, LoginUser and Product objects to the JSP
+		// to capture the form input		
+	
+//		Long userId = (Long) session.getAttribute("userId");
+//		System.out.println("User in session: " + userId);
+//		if (userId == null) {
+//			// Redirect to login if user is not logged in
+//			return "order.jsp";
+//		}
+		// Retrieve the user from the database
+//		User user = userService.findUserById(userId);
+//		System.out.println("User in session: " + user);
+//		if (user == null) {
+//			// Redirect to login if user is not found
+//			return "order.jsp";
+//		}
+
+		// Add the user's name to the model
+		model.addAttribute("newProduct", new Product());
+//		model.addAttribute("userName", user.getFirstName());
+		model.addAttribute("newUser", new User());
+		model.addAttribute("newLogin", new LoginUser());
+		return "order.jsp";
+		}
 //	@GetMapping("/teams/new")
 //	public String addTeam(Model model, HttpSession session) {
 //		Long userId = (Long) session.getAttribute("userId");
@@ -290,18 +321,45 @@ public class HomeController {
 		return "redirect:/";
 	}
 //
-//	@PostMapping("/newTeam")
-//	public String createTeam(@Valid @ModelAttribute("newTeam") Team team, BindingResult result, Model model) {
-//
-//		if (result.hasErrors()) {
-//			return "new.jsp";
-//		} else {
-//			teamService.createTeam(team);
-//
-//			return "redirect:/welcome";
+	@PostMapping("/newProduct")
+	public String createTeam(@Valid @ModelAttribute("newProduct") Product product, BindingResult result, Model model) {
+
+		if (result.hasErrors()) {
+			return "order.jsp";
+		} else {
+			productService.saveProduct(product);
+
+			return "redirect:/cart";
+		}
+
+	}
+	@PostMapping("/product")
+	public String addProduct1(@RequestParam("productName") String productName, Model model, HttpSession session) {
+		// Bind empty User, LoginUser and Product objects to the JSP
+		// to capture the form input		
+	
+//		Long userId = (Long) session.getAttribute("userId");
+//		System.out.println("User in session: " + userId);
+//		if (userId == null) {
+//			// Redirect to login if user is not logged in
+//			return "order.jsp";
 //		}
-//
-//	}
+		// Retrieve the user from the database
+//		User user = userService.findUserById(userId);
+//		System.out.println("User in session: " + user);
+//		if (user == null) {
+//			// Redirect to login if user is not found
+//			return "order.jsp";
+//		}
+
+		// Add the user's name to the model
+		model.addAttribute("productName", productName);
+		model.addAttribute("newProduct", new Product());
+//		model.addAttribute("userName", user.getFirstName());
+		model.addAttribute("newUser", new User());
+		model.addAttribute("newLogin", new LoginUser());
+		return "order.jsp";
+		}
 //	@PostMapping("/editTeam/{id}")
 //	public String updateTeam(@PathVariable(value="id") Long id, @Valid @ModelAttribute("team") Team updatedTeam, BindingResult result, Model model) {
 //

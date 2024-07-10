@@ -9,7 +9,9 @@ body {
 .layout_padding {
   padding: 90px 0;
 }
-
+.btn-nothing {
+	background-color: transparent;
+}
 .layout_padding2 {
   padding: 75px 0;
 }
