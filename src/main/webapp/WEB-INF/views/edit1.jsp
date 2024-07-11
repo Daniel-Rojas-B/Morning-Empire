@@ -19,10 +19,10 @@
 <meta name="author" content="" />
 <link rel="shortcut icon" href="images/favicon.png" type="">
 
-<title>Feane</title>
+<title>M</title>
 
 <!-- bootstrap core css -->
-<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css" /> 
 
 <!--owl slider stylesheet -->
 <link rel="stylesheet" type="text/css"
@@ -161,46 +161,28 @@
 	<section class="food_section layout_padding">
 		<div class="container">
 			<div class="heading_container heading_center">
-				<h2>Your Cart</h2>
+				<h2>Your Order</h2>
 			</div>
 			<div class="Cart">
 
 				<body>
-					<div class="container mt-5">
+					<form:form action="/editProduct/${product.productId}" method="POST" modelAttribute="product">
 
-						<table class="table table-bordered table-striped table-hover">
-							<thead class="thead-dark">
-								<tr>
 
-									<th class="text-center">Product</th>
-									<th class="text-center">Special Instructions</th>
-									<th class="text-center">Quantity</th>
-									<th class="text-center">Actions</th>
-								</tr>
-							</thead>
-							<c:forEach var="product" items="${products}">
-								<tr>
-									<td><c:out value="${product.name}" /></td>
-									<td><c:out value="${product.description}" /></td>
-									<td class="text-center">
-										 
-										<input class="text-center" style="width: 40px;" type="number" id="number" class="number" value="1" min="1">
-																				
-										
-									</td>
-									<td class="text-center"><button class="btn-success">
-											<a style="color: white;"
-												href="/products/${product.productId}/edit">Edit</a>
-										</button>
-										<button class="btn-danger">
-											<a style="color: white;" href="/delete/${product.productId}">Delete</a>
-										</button></td>
-								</tr>
-							</c:forEach>
-						</table>
-					</div>
+						<form:label path="name">Product Name:</form:label>
+						<form:input type="text" path="name" value="${product.name}"/>
+						<form:errors path="name" class="text-danger" />
 
-					
+						<form:label path="description">Special Instructions:</form:label>
+						<form:input type="text" path="description" value="${product.description}" />
+						<form:errors path="description" class="text-danger" />
+
+
+						<div class="align-right">
+							<input class="btn-success" type="submit" value="Add to Cart" />
+						</div>
+					</form:form>
+
 				</body>
 			</div>
 
