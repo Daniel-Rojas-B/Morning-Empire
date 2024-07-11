@@ -10,7 +10,16 @@ body {
   padding: 90px 0;
 }
 .btn-nothing {
-	background-color: transparent;
+			background-color: #FFBE33; /* Set background color to yellow */
+            border: none; /* Remove default border */
+            color: white; /* Set text color */
+            padding: 10px 13px 10px 10px; /* Add some padding */
+            text-align: center; /* Center the text */
+            text-decoration: none; /* Remove underline */
+            display: inline-block; /* Make it inline-block */
+            font-size: 16px; /* Set font size */
+            border-radius: 50px; /* Make the button rounded, adjust as needed */
+            cursor: pointer; /* Change cursor to pointer */
 }
 .layout_padding2 {
   padding: 75px 0;
