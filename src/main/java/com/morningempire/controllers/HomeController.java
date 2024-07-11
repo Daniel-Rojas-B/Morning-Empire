@@ -68,6 +68,8 @@ public class HomeController {
 		model.addAttribute("newLogin", new LoginUser());
 		return "home.jsp";
 	}
+	
+	
 
 	@GetMapping("/RegistrationandLogin")
 	public String login(Model model, HttpSession session) {

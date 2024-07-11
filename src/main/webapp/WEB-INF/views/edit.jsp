@@ -22,7 +22,7 @@
 <title>Morning Empire</title>
 
 <!-- bootstrap core css -->
-<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="../../css/bootstrap.css" />
 
 <!--owl slider stylesheet -->
 <link rel="stylesheet" type="text/css"
@@ -33,12 +33,12 @@
 	integrity="sha512-CruCP+TD3yXzlvvijET8wV5WxxEh5H8P4cmz0RFbKK6FlZ2sYl3AEsKlLPHbniXKSrDdFewhbmBK5skbdsASbQ=="
 	crossorigin="anonymous" />
 <!-- font awesome style -->
-<link href="css/font-awesome.min.css" rel="stylesheet" />
+<link href="../../css/font-awesome.min.css" rel="stylesheet" />
 
 <!-- Custom styles for this template -->
-<link href="css/style.css" rel="stylesheet" />
+<link href="../../css/style.css" rel="stylesheet" />
 <!-- responsive style -->
-<link href="css/responsive.css" rel="stylesheet" />
+<link href="../../css/responsive.css" rel="stylesheet" />
 
 </head>
 
@@ -46,7 +46,7 @@
 
 	<div class="hero_area">
 		<div class="bg-box">
-			<img src="images/hero-bg.jpg" alt="">
+			<img src="../../images/hero-bg.jpg" alt="">
 		</div>
 		<!-- header section strats -->
 		<header class="header_section">

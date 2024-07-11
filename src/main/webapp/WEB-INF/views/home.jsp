@@ -153,7 +153,7 @@
 									<i class="fa fa-search" aria-hidden="true"></i>
 								</button>
 							</form>
-							<a href="/menu" class="order_online"> Order Online </a>
+							<a href="/edit1" class="order_online"> Order Online </a>
 
 						</div>
 

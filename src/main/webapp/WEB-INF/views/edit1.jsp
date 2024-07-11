@@ -19,10 +19,10 @@
 <meta name="author" content="" />
 <link rel="shortcut icon" href="images/favicon.png" type="">
 
-<title>M</title>
+<title>Morning Empire</title>
 
 <!-- bootstrap core css -->
-<link rel="stylesheet" type="text/css" href="css/bootstrap.css" /> 
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
 
 <!--owl slider stylesheet -->
 <link rel="stylesheet" type="text/css"
