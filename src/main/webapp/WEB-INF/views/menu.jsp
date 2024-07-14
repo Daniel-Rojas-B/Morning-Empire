@@ -19,7 +19,7 @@
   <meta name="author" content="" />
   <link rel="shortcut icon" href="images/favicon.png" type="">
 
-  <title> Feane </title>
+  <title> Morning Empire </title>
 
   <!-- bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
@@ -50,7 +50,7 @@
         <nav class="navbar navbar-expand-lg custom_nav-container ">
           <a class="navbar-brand" href="index.html">
             <span>
-              Feane
+              Morning Empire
             </span>
           </a>
 
@@ -61,7 +61,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav  mx-auto ">
               <li class="nav-item">
-                <a class="nav-link" href="index.html">Home </a>
+                <a class="nav-link" href="/">Home </a>
               </li>
               <li class="nav-item active">
                 <a class="nav-link" href="menu.html">Menu <span class="sr-only">(current)</span> </a>
@@ -159,10 +159,10 @@
 
       <ul class="filters_menu">
         <li class="active" data-filter="*">All</li>
-        <li data-filter=".burger">Burger</li>
-        <li data-filter=".pizza">Pizza</li>
-        <li data-filter=".pasta">Pasta</li>
-        <li data-filter=".fries">Fries</li>
+        <li data-filter=".burger">Meals</li>
+        <li data-filter=".pizza">Pancakes</li>
+        <li data-filter=".pasta">French Toast</li>
+        <li data-filter=".fries">Beverages</li>
       </ul>
 
       <div class="filters-content">
@@ -897,7 +897,7 @@
         <div class="col-md-4 footer-col">
           <div class="footer_detail">
             <a href="" class="footer-logo">
-              Feane
+              Morning Empire
             </a>
             <p>
               Necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with

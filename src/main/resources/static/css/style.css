@@ -9,6 +9,11 @@ body {
 .layout_padding {
   padding: 90px 0;
 }
+#message {
+            width: 100%; /* Make textarea fill the container's width */
+            
+            box-sizing: border-box; /* Include padding and border in the element's total width and height */
+        }
 .btn-nothing {
 			background-color: #FFBE33; /* Set background color to yellow */
             border: none; /* Remove default border */

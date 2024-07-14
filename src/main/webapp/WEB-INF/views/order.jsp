@@ -19,7 +19,7 @@
 <meta name="author" content="" />
 <link rel="shortcut icon" href="images/favicon.png" type="">
 
-<title>Feane</title>
+<title>Morning Empire</title>
 
 <!-- bootstrap core css -->
 <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
@@ -52,9 +52,13 @@
 		<header class="header_section">
 			<div class="container">
 				<nav class="navbar navbar-expand-lg custom_nav-container ">
-					<a class="navbar-brand" href="index.html"> <span> Feane
+					<a class="navbar-brand" href="/"> <span> Morning Empire
 					</span>
+
 					</a>
+
+
+
 
 					<button class="navbar-toggler" type="button" data-toggle="collapse"
 						data-target="#navbarSupportedContent"
@@ -65,12 +69,14 @@
 
 					<div class="collapse navbar-collapse" id="navbarSupportedContent">
 						<ul class="navbar-nav  mx-auto ">
-							<li class="nav-item"><a class="nav-link" href="/">Home </a></li>
-							<li class="nav-item active"><a class="nav-link" href="/menu">Menu
+							<li class="nav-item active"><a class="nav-link" href="/">Home
 									<span class="sr-only">(current)</span>
 							</a></li>
+							<li class="nav-item"><a class="nav-link" href="/menu">Menu</a>
+							</li>
 							<li class="nav-item"><a class="nav-link" href="/about">About</a>
 							</li>
+
 
 							<c:if test="${not empty userName}">
 								<li class="nav-item"><a class="nav-link" href="/logout">Hi,${userName}</a><a
@@ -79,9 +85,9 @@
 
 						</ul>
 						<div class="user_option">
-							<a href="" class="user_link"> <i class="fa fa-user"
-								aria-hidden="true"></i>
-							</a> <a class="cart_link" href="#"> <svg version="1.1"
+							<a href="/RegistrationandLogin" class="user_link"> <i
+								class="fa fa-user" aria-hidden="true"></i>
+							</a> <a class="cart_link" href="/cart"> <svg version="1.1"
 									id="Capa_1" xmlns="http://www.w3.org/2000/svg"
 									xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 									viewBox="0 0 456.029 456.029"
@@ -147,12 +153,19 @@
 									<i class="fa fa-search" aria-hidden="true"></i>
 								</button>
 							</form>
-							<a href="" class="order_online"> Order Online </a>
+							<a href="/menu" class="order_online"> Order Online </a>
+
 						</div>
+
 					</div>
+
 				</nav>
+
 			</div>
+
 		</header>
+
+
 		<!-- end header section -->
 	</div>
 
@@ -169,12 +182,15 @@
 					<form:form action="/newProduct" method="POST" modelAttribute="newProduct">
 
 
-						<form:label path="name">Product Name:</form:label>
-						<form:input type="text" path="name" value="${productName}"/>
+						<form:label path="name" style="font-weight: bold;">Product Name:</form:label>
+											
+						<form:input style="border: none;" type="text" path="name" value="${productName}" readonly="readonly"/>
 						<form:errors path="name" class="text-danger" />
-
-						<form:label path="description">Special Instructions:</form:label>
-						<form:input type="text" path="description" required="true" />
+						<br />
+						<br />
+						<form:label path="description" style="font-weight: bold;">Special Instructions:</form:label>
+						<br />
+						<form:textarea rows="4" id="message" type="text" path="description" />
 						<form:errors path="description" class="text-danger" />
 
 
@@ -212,7 +228,7 @@
 				</div>
 				<div class="col-md-4 footer-col">
 					<div class="footer_detail">
-						<a href="" class="footer-logo"> Feane </a>
+						<a href="" class="footer-logo"> Morning Empire </a>
 						<p>Necessary, making this the first true generator on the
 							Internet. It uses a dictionary of over 200 Latin words, combined
 							with</p>

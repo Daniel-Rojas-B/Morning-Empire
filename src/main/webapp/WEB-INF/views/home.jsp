@@ -177,7 +177,7 @@
 							<div class="row">
 								<div class="col-md-7 col-lg-6 ">
 									<div class="detail-box">
-										<h1>Fast Food Restaurant</h1>
+										<h1>Gourmet Breakfast</h1>
 
 										<p>Step into a realm where mornings awaken with a symphony
 											of flavors and aromas, where every sunrise promises a
@@ -196,11 +196,9 @@
 							<div class="row">
 								<div class="col-md-7 col-lg-6 ">
 									<div class="detail-box">
-										<h1>Fast Food Restaurant</h1>
-										<p>Doloremque, itaque aperiam facilis rerum, commodi,
-											temporibus sapiente ad mollitia laborum quam quisquam esse
-											error unde. Tempora ex doloremque, labore, sunt repellat
-											dolore, iste magni quos nihil ducimus libero ipsam.</p>
+										<h1>Experience the Extraordinary</h1>
+										<p>Elevate your mornings with an unforgettable feast of elegance and flavor. At Morning Empire, we redefine breakfast with our 
+										exquisite selection of gourmet delights, crafted to perfection and delivered straight to your doorstep.</p>
 										<div class="btn-box">
 											<a href="" class="btn1"> Order Now </a>
 										</div>
@@ -214,11 +212,9 @@
 							<div class="row">
 								<div class="col-md-7 col-lg-6 ">
 									<div class="detail-box">
-										<h1>Fast Food Restaurant</h1>
-										<p>Doloremque, itaque aperiam facilis rerum, commodi,
-											temporibus sapiente ad mollitia laborum quam quisquam esse
-											error unde. Tempora ex doloremque, labore, sunt repellat
-											dolore, iste magni quos nihil ducimus libero ipsam.</p>
+										<h1>Indulge in Luxury Breakfast Delivered to Your Door</h1>
+										<p>Order online today and discover why Morning Empire is synonymous with exceptional breakfast indulgence. Your journey to
+										 culinary excellence starts here.</p>
 										<div class="btn-box">
 											<a href="" class="btn1"> Order Now </a>
 										</div>
@@ -254,10 +250,10 @@
 								<img src="images/o1.jpg" alt="">
 							</div>
 							<div class="detail-box">
-								<h5>Tasty Thursdays</h5>
+								<h5>Tasty Thursdays</h5>  
 								<h6>
 									<span>20%</span> Off
-								</h6>
+								</h6> 
 
 
 
@@ -331,7 +327,7 @@
 								<img src="images/o2.jpg" alt="">
 							</div>
 							<div class="detail-box">
-								<h5>Pizza Days</h5>
+								<h5>Pancakes Days</h5>
 								<h6>
 									<span>15%</span> Off
 								</h6>
@@ -416,10 +412,10 @@
 
 			<ul class="filters_menu">
 				<li class="active" data-filter="*">All</li>
-				<li data-filter=".burger">Burger</li>
-				<li data-filter=".pizza">Pizza</li>
-				<li data-filter=".pasta">Pasta</li>
-				<li data-filter=".fries">Fries</li>
+				<li data-filter=".burger">Meals</li>
+				<li data-filter=".pizza">Pancakes</li>
+				<li data-filter=".pasta">French Toast</li>
+				<li data-filter=".fries">Beverages</li>
 			</ul>
 
 			<div class="filters-content">
@@ -432,13 +428,13 @@
 								</div>
 								<div class="detail-box">
 									<form action="/product" method="post">
-										<h5>United Kingdom: Full English</h5>
+										<h5>British: Full English</h5>
 										<input type="hidden" name="productName"
 											value="United Kingdom: Full English">
 										<p>Includes eggs, bacon, sausages, baked beans, grilled
-											tomatoes, mushrooms, toast, and black pudding.</p>
+											tomatoes, mushrooms, toast, and black pudding.</p> 
 										<div class="options">
-											<h6>$20</h6>
+											<h6>$20</h6> 
 
 											<button type="submit" class="btn-nothing">
 
@@ -463,7 +459,7 @@
 									<img src="images/f2.png" alt="">
 								</div>
 								<div class="detail-box">
-									<h5>Japan: Traditional</h5>
+									<h5>Japanese: Traditional</h5>
 									<p>Consists of rice, miso soup, grilled fish, pickled
 										vegetables, and a rolled omelette (tamagoyaki).</p>
 									<div class="options">
@@ -538,7 +534,7 @@
 						<div class="box">
 							<div>
 								<div class="img-box">
-									<img src="images/f3.png" alt="">
+									<img src="images/f3.png" alt=""> 
 								</div>
 								<div class="detail-box">
 									<h5>Mexican: Chilaquiles</h5>
@@ -696,7 +692,7 @@
 									<img src="images/f5.png" alt="">
 								</div>
 								<div class="detail-box">
-									<h5>French Fries</h5>
+									<h5>Splendor Pancakes</h5>
 									<p>Veniam debitis quaerat officiis quasi cupiditate quo,
 										quisquam velit, magnam voluptatem repellendus sed eaque</p>
 									<div class="options">
@@ -774,7 +770,7 @@
 									<img src="images/f6.png" alt="">
 								</div>
 								<div class="detail-box">
-									<h5>Delicious Pizza</h5>
+									<h5>Delicious Pizzaa</h5>
 									<p>Veniam debitis quaerat officiis quasi cupiditate quo,
 										quisquam velit, magnam voluptatem repellendus sed eaque</p>
 									<div class="options">
@@ -845,240 +841,9 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-sm-6 col-lg-4 all burger">
-						<div class="box">
-							<div>
-								<div class="img-box">
-									<img src="images/f7.png" alt="">
-								</div>
-								<div class="detail-box">
-									<h5>Tasty Burger</h5>
-									<p>Veniam debitis quaerat officiis quasi cupiditate quo,
-										quisquam velit, magnam voluptatem repellendus sed eaque</p>
-									<div class="options">
-										<h6>$12</h6>
-										<a href=""> <svg version="1.1" id="Capa_1"
-												xmlns="http://www.w3.org/2000/svg"
-												xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-												viewBox="0 0 456.029 456.029"
-												style="enable-background: new 0 0 456.029 456.029;"
-												xml:space="preserve">
-                        <g>
-                          <g>
-                            <path
-													d="M345.6,338.862c-29.184,0-53.248,23.552-53.248,53.248c0,29.184,23.552,53.248,53.248,53.248
-                         c29.184,0,53.248-23.552,53.248-53.248C398.336,362.926,374.784,338.862,345.6,338.862z" />
-                          </g>
-                        </g>
-                        <g>
-                          <g>
-                            <path
-													d="M439.296,84.91c-1.024,0-2.56-0.512-4.096-0.512H112.64l-5.12-34.304C104.448,27.566,84.992,10.67,61.952,10.67H20.48
-                         C9.216,10.67,0,19.886,0,31.15c0,11.264,9.216,20.48,20.48,20.48h41.472c2.56,0,4.608,2.048,5.12,4.608l31.744,216.064
-                         c4.096,27.136,27.648,47.616,55.296,47.616h212.992c26.624,0,49.664-18.944,55.296-45.056l33.28-166.4
-                         C457.728,97.71,450.56,86.958,439.296,84.91z" />
-                          </g>
-                        </g>
-                        <g>
-                          <g>
-                            <path
-													d="M215.04,389.55c-1.024-28.16-24.576-50.688-52.736-50.688c-29.696,1.536-52.224,26.112-51.2,55.296
-                         c1.024,28.16,24.064,50.688,52.224,50.688h1.024C193.536,443.31,216.576,418.734,215.04,389.55z" />
-                          </g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                      </svg>
-										</a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-6 col-lg-4 all burger">
-						<div class="box">
-							<div>
-								<div class="img-box">
-									<img src="images/f8.png" alt="">
-								</div>
-								<div class="detail-box">
-									<h5>Tasty Burger</h5>
-									<p>Veniam debitis quaerat officiis quasi cupiditate quo,
-										quisquam velit, magnam voluptatem repellendus sed eaque</p>
-									<div class="options">
-										<h6>$14</h6>
-										<a href=""> <svg version="1.1" id="Capa_1"
-												xmlns="http://www.w3.org/2000/svg"
-												xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-												viewBox="0 0 456.029 456.029"
-												style="enable-background: new 0 0 456.029 456.029;"
-												xml:space="preserve">
-                        <g>
-                          <g>
-                            <path
-													d="M345.6,338.862c-29.184,0-53.248,23.552-53.248,53.248c0,29.184,23.552,53.248,53.248,53.248
-                         c29.184,0,53.248-23.552,53.248-53.248C398.336,362.926,374.784,338.862,345.6,338.862z" />
-                          </g>
-                        </g>
-                        <g>
-                          <g>
-                            <path
-													d="M439.296,84.91c-1.024,0-2.56-0.512-4.096-0.512H112.64l-5.12-34.304C104.448,27.566,84.992,10.67,61.952,10.67H20.48
-                         C9.216,10.67,0,19.886,0,31.15c0,11.264,9.216,20.48,20.48,20.48h41.472c2.56,0,4.608,2.048,5.12,4.608l31.744,216.064
-                         c4.096,27.136,27.648,47.616,55.296,47.616h212.992c26.624,0,49.664-18.944,55.296-45.056l33.28-166.4
-                         C457.728,97.71,450.56,86.958,439.296,84.91z" />
-                          </g>
-                        </g>
-                        <g>
-                          <g>
-                            <path
-													d="M215.04,389.55c-1.024-28.16-24.576-50.688-52.736-50.688c-29.696,1.536-52.224,26.112-51.2,55.296
-                         c1.024,28.16,24.064,50.688,52.224,50.688h1.024C193.536,443.31,216.576,418.734,215.04,389.55z" />
-                          </g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                      </svg>
-										</a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-6 col-lg-4 all pasta">
-						<div class="box">
-							<div>
-								<div class="img-box">
-									<img src="images/f9.png" alt="">
-								</div>
-								<div class="detail-box">
-									<h5>Delicious Pasta</h5>
-									<p>Veniam debitis quaerat officiis quasi cupiditate quo,
-										quisquam velit, magnam voluptatem repellendus sed eaque</p>
-									<div class="options">
-										<h6>$10</h6>
-										<a href=""> <svg version="1.1" id="Capa_1"
-												xmlns="http://www.w3.org/2000/svg"
-												xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-												viewBox="0 0 456.029 456.029"
-												style="enable-background: new 0 0 456.029 456.029;"
-												xml:space="preserve">
-                        <g>
-                          <g>
-                            <path
-													d="M345.6,338.862c-29.184,0-53.248,23.552-53.248,53.248c0,29.184,23.552,53.248,53.248,53.248
-                         c29.184,0,53.248-23.552,53.248-53.248C398.336,362.926,374.784,338.862,345.6,338.862z" />
-                          </g>
-                        </g>
-                        <g>
-                          <g>
-                            <path
-													d="M439.296,84.91c-1.024,0-2.56-0.512-4.096-0.512H112.64l-5.12-34.304C104.448,27.566,84.992,10.67,61.952,10.67H20.48
-                         C9.216,10.67,0,19.886,0,31.15c0,11.264,9.216,20.48,20.48,20.48h41.472c2.56,0,4.608,2.048,5.12,4.608l31.744,216.064
-                         c4.096,27.136,27.648,47.616,55.296,47.616h212.992c26.624,0,49.664-18.944,55.296-45.056l33.28-166.4
-                         C457.728,97.71,450.56,86.958,439.296,84.91z" />
-                          </g>
-                        </g>
-                        <g>
-                          <g>
-                            <path
-													d="M215.04,389.55c-1.024-28.16-24.576-50.688-52.736-50.688c-29.696,1.536-52.224,26.112-51.2,55.296
-                         c1.024,28.16,24.064,50.688,52.224,50.688h1.024C193.536,443.31,216.576,418.734,215.04,389.55z" />
-                          </g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                      </svg>
-										</a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
+					 
+					 
+					
 				</div>
 			</div>
 			<div class="btn-box">
@@ -1103,14 +868,12 @@
 				<div class="col-md-6">
 					<div class="detail-box">
 						<div class="heading_container">
-							<h2>We Are Feane</h2>
+							<h2>We Are Morning Empire</h2>
 						</div>
-						<p>There are many variations of passages of Lorem Ipsum
-							available, but the majority have suffered alteration in some
-							form, by injected humour, or randomised words which don't look
-							even slightly believable. If you are going to use a passage of
-							Lorem Ipsum, you need to be sure there isn't anything
-							embarrassing hidden in the middle of text. All</p>
+						<p>We are purveyors of exquisite morning experiences, dedicated to redefining breakfast as a luxurious affair.
+						 Nestled in the heart of LA, our passion lies in crafting unforgettable breakfasts that 
+						 elevate the senses and nourish the soul. From the finest ingredients sourced globally to the meticulous artistry in every dish, 
+						 we invite you to indulge in a symphony of flavors and sophistication that only our breakfasts can offer.</p>  
 						<a href=""> Read More </a>
 					</div>
 				</div>
@@ -1120,54 +883,7 @@
 
 	<!-- end about section -->
 
-	<!-- book section -->
-	<section class="book_section layout_padding">
-		<div class="container">
-			<div class="heading_container">
-				<h2>Book A Table</h2>
-			</div>
-			<div class="row">
-				<div class="col-md-6">
-					<div class="form_container">
-						<form action="">
-							<div>
-								<input type="text" class="form-control" placeholder="Your Name" />
-							</div>
-							<div>
-								<input type="text" class="form-control"
-									placeholder="Phone Number" />
-							</div>
-							<div>
-								<input type="email" class="form-control"
-									placeholder="Your Email" />
-							</div>
-							<div>
-								<select class="form-control nice-select wide">
-									<option value="" disabled selected>How many persons?</option>
-									<option value="">2</option>
-									<option value="">3</option>
-									<option value="">4</option>
-									<option value="">5</option>
-								</select>
-							</div>
-							<div>
-								<input type="date" class="form-control">
-							</div>
-							<div class="btn_box">
-								<button>Book Now</button>
-							</div>
-						</form>
-					</div>
-				</div>
-				<div class="col-md-6">
-					<div class="map_container ">
-						<div id="googleMap"></div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- end book section -->
+	<br />
 
 	<!-- client section -->
 
@@ -1234,7 +950,7 @@
 				</div>
 				<div class="col-md-4 footer-col">
 					<div class="footer_detail">
-						<a href="" class="footer-logo"> Feane </a>
+						<a href="" class="footer-logo"> Morning Empire </a>
 						<p>Necessary, making this the first true generator on the
 							Internet. It uses a dictionary of over 200 Latin words, combined
 							with</p>

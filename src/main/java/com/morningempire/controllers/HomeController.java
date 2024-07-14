@@ -187,23 +187,23 @@ public class HomeController {
 		// Bind empty User, LoginUser and Product objects to the JSP
 		// to capture the form input
 
-//		Long userId = (Long) session.getAttribute("userId");
-//		System.out.println("User in session: " + userId);
-//		if (userId == null) {
-//			// Redirect to login if user is not logged in
-//			return "order.jsp";
-//		}
+		Long userId = (Long) session.getAttribute("userId");
+		System.out.println("User in session: " + userId);
+		if (userId == null) {
+			// Redirect to login if user is not logged in
+			return "order.jsp";
+		}
 		// Retrieve the user from the database
-//		User user = userService.findUserById(userId);
-//		System.out.println("User in session: " + user);
-//		if (user == null) {
-//			// Redirect to login if user is not found
-//			return "order.jsp";
-//		}
+		User user = userService.findUserById(userId);
+		System.out.println("User in session: " + user);
+		if (user == null) {
+			// Redirect to login if user is not found
+			return "order.jsp";
+		}
 
 		// Add the user's name to the model
 		model.addAttribute("newProduct", new Product());
-//		model.addAttribute("userName", user.getFirstName());
+		model.addAttribute("userName", user.getFirstName());
 		model.addAttribute("newUser", new User());
 		model.addAttribute("newLogin", new LoginUser());
 		return "order.jsp";

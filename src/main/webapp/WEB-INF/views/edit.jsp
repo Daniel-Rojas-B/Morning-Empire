@@ -52,7 +52,7 @@
 		<header class="header_section">
 			<div class="container">
 				<nav class="navbar navbar-expand-lg custom_nav-container ">
-					<a class="navbar-brand" href="index.html"> <span> Feane
+					<a class="navbar-brand" href="index.html"> <span> Morning Empire
 					</span>
 					</a>
 
@@ -169,12 +169,13 @@
 					<form:form action="/editProduct/${product.productId}" method="POST" modelAttribute="product">
 
 
-						<form:label path="name">Product Name:</form:label>
-						<form:input type="text" path="name" value="${product.name}"/>
+						<form:label path="name" style="font-weight: bold;">Product Name:</form:label>
+						<form:input style="border: none;" type="text" path="name" value="${product.name}" readonly="readonly"/>
 						<form:errors path="name" class="text-danger" />
-
-						<form:label path="description">Special Instructions:</form:label>
-						<form:input type="text" path="description" value="${product.description}" />
+						<br />
+						<br />
+						<form:label path="description" style="font-weight: bold;">Special Instructions:</form:label>
+						<form:textarea rows="4" id="message" type="text" path="description" value="${product.description}" />
 						<form:errors path="description" class="text-danger" />
 
 
@@ -212,7 +213,7 @@
 				</div>
 				<div class="col-md-4 footer-col">
 					<div class="footer_detail">
-						<a href="" class="footer-logo"> Feane </a>
+						<a href="" class="footer-logo"> Morning Empire </a>
 						<p>Necessary, making this the first true generator on the
 							Internet. It uses a dictionary of over 200 Latin words, combined
 							with</p>
